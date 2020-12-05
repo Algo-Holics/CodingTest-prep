@@ -11,13 +11,16 @@ class UntileOne {
 
         int processCount = 0;
 
-        while(N != 1) {
-            if (N % K == 0) {
-                N /= K;
-            } else {
-                N -= 1;
-            }
+        while(true) {
+            int nextN = (N / K) * K;
+            processCount += N - nextN;
+
+            N = nextN;
+            N /= K;
             processCount++;
+            if (N <= 1) {
+                break;
+            }
         }
 
         System.out.println(processCount);
