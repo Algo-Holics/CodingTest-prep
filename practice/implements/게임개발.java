@@ -6,7 +6,6 @@ public class 게임개발 {
 		
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		//n, m: 맵의 크기
 		int n = sc.nextInt();
 		int m = sc.nextInt();
@@ -28,9 +27,11 @@ public class 게임개발 {
 			}
 		}
 
-		// 위, 왼, 아, 오
+		// 위, 오, 아, 왼
+//		int[] dx = {-1, 0, 1, 0};
+//		int[] dy = {0, -1, 0, 1};
 		int[] dx = {-1, 0, 1, 0};
-		int[] dy = {0, -1, 0, 1};
+		int[] dy = {0, 1, 0, -1};
 		
 		int cnt = 1;
 		int rotate = 0;
