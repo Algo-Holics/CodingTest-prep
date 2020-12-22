@@ -29,6 +29,6 @@ public class Example02_queue {
 		//[4, 1, 7, 3] 출력
 		Collections.reverse((List<Integer>) queue);
 		System.out.println(queue);
-		//다른 방법 없을까ㅠㅠ?
+		//반복문으로 거꾸로 출력하는 수 밖에 없는지 궁금;
 	}
 }
