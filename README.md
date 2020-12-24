@@ -2,11 +2,15 @@
 
 ### [주요 알고리즘 이론과 실전 문제]
  - [그리디](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/greedy)
-    - [예제: 거스름돈](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/greedy/change)
-    - [큰 수의 법칙](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/greedy/ruleofbignumber)
-    - [숫자 카드 게임](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/greedy/cardgame)
-    - [1이 될 때까지](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/greedy/untilone)
+   - 예제: 거스름돈
+   - 큰 수의 법칙
+   - 숫자 카드 게임
+   - 1이 될 때까지
  - [구현](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/implements)
+   - 상하좌우
+   - 시각
+   - 왕실의 나이트
+   - 게임 개발
  - [DFS/BFS](#)
  - [정렬](#)
  - [이진 탐색](#)
