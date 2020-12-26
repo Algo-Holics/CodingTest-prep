@@ -1,5 +1,12 @@
-위에서 아래로
-
-성적이 낮은 순서로 학생 출력하기
-
-두 배열의 원소 교체
+# ToC
+- Practice 
+    - [위에서 아래로](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/UptoDown.java)
+    - [성적이 낮은 순서로 학생 출력하기](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/ScoreDown.java)
+    - [두 배열의 원소 교체](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/ReplaceElement.java)
+- Example 폴더 내부 목차
+    - [SelectionSort](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/example/SelectionSortTest.java)
+    - [InsertionSort](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/example/InsertionSortTest.java)
+    - [QuickSort](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/example/QuickSortTest.java)
+    - [CountSort](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/example/CountSortTest.java)
+    - [Basic Java sort](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/example/BasicSortTest.java)
+    - [Basic Java sort (key)](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/practice/sort/example/BasicSortTest2.java)
