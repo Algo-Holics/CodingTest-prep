@@ -1,6 +1,7 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,vscode,eclipse,python,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij,vscode,eclipse,python,java
+
+.idea/
 
 ### Eclipse ###
 .metadata
