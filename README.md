@@ -11,7 +11,9 @@
    - 시각
    - 왕실의 나이트
    - 게임 개발
- - [DFS/BFS](#)
+ - [DFS/BFS](https://github.com/Algo-Holics/CodingTest-prep/tree/jamie/practice/search)
+   - 음료수 얼려먹기
+   - 미로 탈출
  - [정렬](#)
  - [이진 탐색](#)
  - [다이나믹 프로그래밍](#)
