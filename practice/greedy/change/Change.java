@@ -1,5 +1,6 @@
 package greedy.change;
 
+import java.util.Arrays;
 import java.util.List;
 
 class Change {
@@ -13,7 +14,7 @@ class Change {
         int numberOfCoin = 0;
         int N = 3500;
 
-        List<Integer> coins = List.of(FIVE_HUNDRED_COIN, HUNDRED_COIN, FIFTY_COIN, TEN_COIN);
+        List<Integer> coins = Arrays.asList(FIVE_HUNDRED_COIN, HUNDRED_COIN, FIFTY_COIN, TEN_COIN);
 
         for (Integer coin : coins) {
             numberOfCoin += (N / coin);
