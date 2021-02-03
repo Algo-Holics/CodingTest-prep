@@ -1,4 +1,4 @@
-### Example
+Example
 
 [EX01 TC] 
 6 4 
@@ -35,7 +35,7 @@
 
 
 -----
-### Practice
+Practice
 
 [팀결성 TC]
 7 8
