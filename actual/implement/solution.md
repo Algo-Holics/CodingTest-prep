@@ -1,12 +1,12 @@
 ### 04. 자물쇠와 열쇠
 
-![lockandkey1](C:\Users\leefr\Desktop\lockandkey1.jpg)
+![lockandkey1](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/actual/implement/img/sol4-1.jpg)
 
-![lockandkey2](C:\Users\leefr\Desktop\lockandkey2.jpg)
+![lockandkey2](https://github.com/Algo-Holics/CodingTest-prep/tree/minhee/actual/implement/img/sol4-2.jpg)
 
 ### 06. 기둥과 보
 
-![image-20210323182030207](C:\Users\leefr\AppData\Roaming\Typora\typora-user-images\image-20210323182030207.png)
+![image-20210323182030207]((https://github.com/Algo-Holics/CodingTest-prep/tree/minhee/actual/implement/img/sol6.jpg)
 
 * **내가 여기서 생각을 혼자 못했던 부분**
   * board의 크기를 N+1로 처음에는 두고 구현했었음 
