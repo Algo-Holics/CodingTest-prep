@@ -2,12 +2,11 @@
 
 ![lockandkey1](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/actual/implement/img/sol4-1.jpg)
 
-![lockandkey2](https://github.com/Algo-Holics/CodingTest-prep/tree/minhee/actual/implement/img/sol4-2.jpg)
+![lockandkey2](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/actual/implement/img/sol4-2.jpg)
 
 ### 06. 기둥과 보
 
-![image-20210323182030207]((https://github.com/Algo-Holics/CodingTest-prep/tree/minhee/actual/implement/img/sol6.jpg)
-
+![image-20210323182030207](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/actual/implement/img/sol6.png)
 * **내가 여기서 생각을 혼자 못했던 부분**
   * board의 크기를 N+1로 처음에는 두고 구현했었음 
     * => 바닥을 구하거나, 보를 확인할때 IndexOutOf range Error가 떠서 상하좌우로 크기를 늘려서 구현함. 
