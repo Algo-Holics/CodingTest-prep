@@ -80,9 +80,12 @@ public class Snake {
 			cx = nx;
 			cy = ny;
 
-			// Turn에 저장해둔 시간보다 현재 시간이 커지면 회전
+			
+			// turnIdx가 전체 Turn횟수보다는 작을때까지만.
 			if (turnIdx < L) {
+				// Turn에 저장해둔 시간과 현재 시간이 일치하면 회전
 				if (time == Turn[turnIdx][0]) {
+					//회전해서 이동할 다음 방향 결정
 					int nxtDir = (dir + Turn[turnIdx][1]) % 4;
 					if (nxtDir == -1) {
 						nxtDir = 3;
