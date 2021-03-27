@@ -1,3 +1,9 @@
+### 03. 문자열 압축
+![문자열압축](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/actual/implement/img/sol3.png)
+
+- 문자열 length 넘어서서 자르는 경우 어떻게 자를지 고민을 해야했음
+- 시작과 끝을 설정을 잘 못해서 계속 배열 크기 넘어서 접근함; 
+
 ### 04. 자물쇠와 열쇠
 
 ![lockandkey1](https://github.com/Algo-Holics/CodingTest-prep/blob/minhee/actual/implement/img/sol4.png)
