@@ -27,3 +27,13 @@
   * [참조한 링크](https://leveloper.tistory.com/100)
 
 * 문제링크 | 내가 푼 코드
+
+
+
+
+
+### 07. 치킨
+
+* 치킨 위치, 가정집 위치 list로 저장
+* combination으로 치킨집이 M 크기만큼 조합을 만들었을 때 거리 확인하고 업데이트.
+  * combination에서 
