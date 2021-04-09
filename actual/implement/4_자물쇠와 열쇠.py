@@ -1,72 +1,56 @@
-def turn(key):
-    n = len(key)
-    result = [[0]*n for _ in range(n)]
-    for i in range(n):
-        for j in range(n):
-            result[i][j] = key[n-1-j][i]
+# 90도 오른쪽으로 회전
+def rotate(key, key_len):
+    result = [[0] * key_len for _ in range(key_len)]
+    for i in range(key_len):
+        for j in range(key_len):
+            result[i][j] = key[key_len-1-j][i]
     return result
 
 
-def move(key, padding):
-    m = len(key)
-    p = len(padding)
-    flag = True
-    for i in range(p-m+1):
-        for j in range(p-m+1):
-            if flag:
-                cnt = 1
-                for k in range(m):
-                    tmp = True
-                    if not tmp:
-                        break
-                    for l in range(m):
-                        if key[k][l] + padding[i+k][j+l] == 1:
-                            cnt += 1
-                            continue
-                        else:
-                            flag = False
-                            tmp = False
-                            break
-                else:
-                    return True
-    else:
-        return False
+# 돌기
+def move(key, lock, pad_length, key_len, lock_len, row, col):
+
+    # 자물쇠에 패딩을 만들어준다
+    padded_lock = [[0] * pad_length for _ in range(pad_length)]
+
+    # 열쇠를 꽂아본다
+    for i in range(key_len):
+        for j in range(key_len):
+            padded_lock[row+i][col+j] += key[i][j]
+
+    # 그 위에 자물쇠를 덮어본다
+    center = key_len - 1
+    # ???????????????????????????????????
+
+    # for i in range(lock_len-1, 2*lock_len-1):
+    #     for j in range(lock_len-1, 2*lock_len-1):
+    for i in range(center, center+lock_len):
+        for j in range(center, center+lock_len):
+            # padded_lock[i][j] += lock[i-lock_len+1][j-lock_len+1]
+            padded_lock[i][j] += lock[i - center][j - center]
+            # 안 맞으면 바로 false
+            if padded_lock[i][j] != 1:
+                return False
+
+    # 자물쇠가 다 1이면 true
+    return True
 
 
 def solution(key, lock):
+    key_len = len(key)
+    lock_len = len(lock)
+    # print(*key, sep="\n")
 
-    n = len(lock)
-    m = len(key)
-    padding = n + 2*m - 2
+    pad_length = lock_len + 2 * (key_len - 1)
+    for _ in range(4):
 
-    # 자물쇠랑 열쇠의 길이가 1인 경우
-    if n == m == 1:
-        if key[0] + lock[0] == 1:
-            return True
-        else:
-            return False
-
-    # M - 1만큼씩 패딩 추가
-    board = [[0] * padding for _ in range(padding)]
-
-    # 패딩 가운데 자물쇠 넣어주기
-    for i in range(m):
-        for j in range(m):
-            board[i+m-1][j+m-1] = lock[i][j]
-
-    cnt = 0
-    while True:
-        if cnt == 3:
-            return False
-        if move(key, board):
-            return True
-        else:
-            key = turn(key)
-            cnt += 1
-
-    # print(*board, sep='\n')
+        # [패딩의 길이 - 열쇠 길이(+1 해야 포함)]만큼 돌기
+        for row in range(pad_length - key_len + 1):
+            for col in range(pad_length - key_len + 1):
+                if move(key, lock, pad_length, key_len, lock_len, row, col):
+                    return True
+        key = rotate(key, key_len)
+    return False
 
 
-# print(solution([[0, 0, 0], [1, 0, 0], [0, 1, 1]], [[1, 1, 1], [1, 1, 0], [1, 0, 1]]))
-print(solution([0], [1]))
-# print(turn([[0, 0, 0], [1, 0, 0], [0, 1, 1]]))
+print(solution([[0, 0, 0], [1, 0, 0], [0, 1, 1]], [[1, 1, 1], [1, 1, 0], [1, 0, 1]]))
