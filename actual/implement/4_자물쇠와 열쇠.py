@@ -19,15 +19,12 @@ def move(key, lock, pad_length, key_len, lock_len, row, col):
             padded_lock[row+i][col+j] += key[i][j]
 
     # 그 위에 자물쇠를 덮어본다
-    center = key_len - 1
-    # ???????????????????????????????????
+    # 패딩락 기준으로 락의 시작은 키의 끝과 같다
+    lock_start = key_len - 1
+    for i in range(lock_start, lock_start + lock_len):
+        for j in range(lock_start, lock_start + lock_len):
+            padded_lock[i][j] += lock[i-lock_start][j-lock_start]
 
-    # for i in range(lock_len-1, 2*lock_len-1):
-    #     for j in range(lock_len-1, 2*lock_len-1):
-    for i in range(center, center+lock_len):
-        for j in range(center, center+lock_len):
-            # padded_lock[i][j] += lock[i-lock_len+1][j-lock_len+1]
-            padded_lock[i][j] += lock[i - center][j - center]
             # 안 맞으면 바로 false
             if padded_lock[i][j] != 1:
                 return False
@@ -39,7 +36,6 @@ def move(key, lock, pad_length, key_len, lock_len, row, col):
 def solution(key, lock):
     key_len = len(key)
     lock_len = len(lock)
-    # print(*key, sep="\n")
 
     pad_length = lock_len + 2 * (key_len - 1)
     for _ in range(4):
@@ -50,6 +46,7 @@ def solution(key, lock):
                 if move(key, lock, pad_length, key_len, lock_len, row, col):
                     return True
         key = rotate(key, key_len)
+
     return False
 
 
