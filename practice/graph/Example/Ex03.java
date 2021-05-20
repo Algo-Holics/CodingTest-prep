@@ -19,7 +19,7 @@ public class Ex03 {
 		for (int i = 0; i < e; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
-			if(findRoot(a)!= findRoot(b)) {
+			if(findRoot(a) == findRoot(b)) {
 				cycle = true;
 				break;
 			}else {
